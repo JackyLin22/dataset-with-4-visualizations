@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+  font-size: 24px;
+  text-shadow: 2px 2px white;
+}
+
+/* adjust typography defaults */
+body {
+  text-align: center;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-image: linear-gradient(rgb(50, 255, 120), rgb(255, 20, 50));
+  margin: 0; /* Prevents excessive scroll */
+  overflow-x: hidden; /* Disables horizontal scrolling */
+}
+
+h1, .fontSize {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fontColor {
+  color: white;
+  text-shadow: 2px 2px black;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  color: red;
+  text-shadow: 2px 2px black;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.chartCenter {
+  display: flex; 
+  flex-direction: column;
+  align-items:center;
+  max-width: 100%;
+  padding: 0; /* Avoid unnecessary spacing */
+  
+}
+
+.container, .container2, .container3, .container4 {
+  max-width: 100%;
+  margin: 5vh;
+  flex: 1 1 100%;
+  box-shadow: 0px 0px 10px #000000;
+  border-radius: 1.5em;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(205, 255, 255);
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 15px;
+  max-height: 900px;
+}
+
+#myChart, #pie {
+  max-height: 900px; /* Set a lower max height */
+}
+
+#bar {
+  color: red;
+  text-shadow: 2px 2px black;
+  max-height: 500px;
+}
+
+#line {
+  max-height: 500px;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 736px) {
+  canvas {
+    width: 100%;
+    height: auto; /* Set a fixed height to ensure the chart remains visible */
+  }
+  
+  .chartCenter {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1em; /* Reduce text size for smaller screens */
+  }
+  
+  h3 {
+    font-size: 0.75em;
+  }
+  
+  .chart-row {
+    flex-direction: column;
+  }
+}
