@@ -3,45 +3,65 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One+SC&family=Ewert&display=swap" rel="stylesheet">
 
     <title>Jacky Lin INST630 Project 2</title>
 
-    <link rel="stylesheet" href="/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One+SC&family=Ewert&display=swap"
+      rel="stylesheet"
+    >
 
-    <script src="/script.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script> -->
+    <!-- CSS (relative path) -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Chart.js (USE ONE VERSION ONLY) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
+    <!-- Your JS (relative path + defer) -->
+    <script src="./script.js" defer></script>
   </head>
+
   <body>
-    <h1>Prince George's 2014 Fiscal Year Data from the Numbers </h1>
-    <h3 class = "fontSize">This green and red background reveals an inspiration behind this project dataset because from 2014 to now, spending has gone up, and the costs have also gone up. </h3>
-    <div class = "chartCenter">
-      <div class = "container">
+    <h1>Prince George's 2014 Fiscal Year Data from the Numbers</h1>
+
+    <h3 class="fontSize">
+      This green and red background reveals an inspiration behind this project dataset
+      because from 2014 to now, spending has gone up, and the costs have also gone up.
+    </h3>
+
+    <div class="chartCenter">
+
+      <div class="container">
         <h2>Money Sent to these Agencies in Prince George's County</h2>
         <h3>This polar area chart shows the data of how much money is sent to these agencies</h3>
-        <canvas id="myChart" style="width:100%; max-width: 1000px"></canvas>
+        <canvas id="myChart"></canvas>
       </div>
-      <div class = "container2">
-         <h2>The Amounts Agencies have Received in Prince George's County</h2>
+
+      <div class="container2">
+        <h2>The Amounts Agencies have Received in Prince George's County</h2>
         <h3>This bar chart reveals how much money was paid towards these agencies</h3>
-        <canvas id="bar" style="width:100%; max-width: 1000px"></canvas>
+        <canvas id="bar"></canvas>
       </div>
-      <div class = "container3">
-         <h2>The Amounts Agencies have Received in Prince George's County</h2>
+
+      <div class="container3">
+        <h2>The Amounts Agencies have Received in Prince George's County</h2>
         <h3>This line chart reveals how much money was paid towards these agencies</h3>
-        <canvas id="line" style="width:100%; max-width: 1000px"></canvas>
+        <canvas id="line"></canvas>
       </div>
-      <div class = "container4">
-         <h2>All of Prince George's Agencies in a Pie Chart</h2>
-        <h3>This pie chart shows the distrubtion of how much money was sent towards these agencies</h3>
-        <canvas id="pie" style="width:100%; max-width: 1000px"></canvas>
+
+      <div class="container4">
+        <h2>All of Prince George's Agencies in a Pie Chart</h2>
+        <h3>This pie chart shows the distribution of how much money was sent towards these agencies</h3>
+        <canvas id="pie"></canvas>
       </div>
+
     </div>
-    <h1 class = "fontColor">This Data is from 2014 and the Numbers Have Gone Up Since</h1>
+
+    <h1 class="fontColor">
+      This Data is from 2014 and the Numbers Have Gone Up Since
+    </h1>
   </body>
 </html>
