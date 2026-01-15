@@ -8,8 +8,9 @@
             
             "type": "chrome",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "/Users/jackylin/Downloads/app 2/index.html"
+            "name": "Open app via localhost",
+            "url": "https://localhost:5500/app/index.html",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
